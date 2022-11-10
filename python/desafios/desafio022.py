@@ -5,9 +5,9 @@
 #Quantas letras ao todo (sem considerar espaços)
 #Quantas letras tem o primeiro nome
 
-nome = input("Digite seu nome completo: ")
+nome = input("Digite seu nome completo: ").strip()
 
-lista = nome.split()
+separa = nome.split()
 
 print("Letras Maiúsculas: {}".format(nome.upper()))
 print("Letras Minúsculas: {}".format(nome.lower()))
@@ -15,4 +15,4 @@ print("Letras Minúsculas: {}".format(nome.lower()))
 nome = nome.replace(" ", "")
 
 print("Quantas Letras: {}".format(len(nome)))
-print("Primeiro Nome Letras: {}".format(len(lista[0])))
+print("Primeiro Nome Letras: {}".format(len(separa[0])))

@@ -9,4 +9,4 @@ nome = input("Digite seu nome completo: ")
 nomeLista = nome.split()
 
 print("Primeiro nome: {}".format(nomeLista[0]))
-print("Último nome: {}".format(nomeLista[-1:]))
+print("Último nome: {}".format(nomeLista[len(nomeLista)-1]))
